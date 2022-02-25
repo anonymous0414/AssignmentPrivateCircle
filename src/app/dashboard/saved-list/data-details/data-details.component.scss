@@ -1,0 +1,24 @@
+@import './../../../../assets/variables';
+
+.mainBox{
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+    padding: 12px 15px;
+    .noDesc{
+        background-color: $lightBg;
+        padding: 15px;
+        font-size: 12px;
+        span{
+            color: $secondary;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        margin-bottom: 12px;
+    }
+    .detailList{
+        font-size: 12px;
+        line-height: 140%;
+        color: $secondary;
+        margin-bottom: 12px;
+    }
+}

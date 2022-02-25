@@ -1,0 +1,14 @@
+@import './../../../assets/variables';
+
+.savedList{
+    display: flex;
+    height: calc(100vh - 70px);
+    max-height: calc(100vh - 70px);
+    .list{
+        width: 80%;
+        border-right: 2px solid $grayBg;
+    }
+    .details{
+        width: 20%;
+    }
+}

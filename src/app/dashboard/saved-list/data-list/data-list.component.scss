@@ -1,0 +1,89 @@
+@import './../../../../assets/variables';
+
+.mainBox{
+    max-height: calc(100vh - 70px) !important;
+    overflow-y: auto !important;
+    table{
+        position: relative;
+        thead{
+            position: sticky;
+            top: 0;
+            background-color: $white;
+            tr{
+                th{
+                    color: #a2a2a2;
+                    font-size: 14px;
+                    border-bottom: 0px solid #dee2e6;
+                    border-top: 0;
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    font-size: 15px;
+                    border-top: 0.5px solid #dee2e6;
+                }
+                &:hover{
+                    background-color: $grayBg;
+                    .btns{
+                        span{
+                            background-color: $white;
+                            border-bottom: 4px solid $primary;
+                            font-weight: bold;
+                        }
+                    }
+                    
+                    .action{
+                        color: $black;
+                    }
+                }
+            }
+        }
+        .date{
+            width: 70px;
+            font-size: 13px !important;
+            color: $lightGray2;
+            text-align: center;
+        }
+        .name{
+            width: fill;
+            font-weight: bold;
+        }
+        .noOfEntity{
+            width: 120px;
+            text-align: right;
+        }
+        .action{
+            width: 150px;
+            color: $lightGray2;
+            i{
+                margin-right: 9px;
+                cursor: pointer;
+            }
+        }
+        .loading{
+            color: $dataListColor;
+        }
+        .btns{
+            width: 80px;
+            color: $primary;
+            font-size: 13px !important;
+            span{
+                padding: 5px 8px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.rotateLoader{
+    animation: rotate 4s infinite linear;
+}
+@keyframes rotate{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}

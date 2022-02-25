@@ -1,0 +1,11 @@
+<header>
+    <div class="menu">
+        <div class="menuItem" *ngFor="let item of menuItem" [routerLink]="item.route" routerLinkActive="active">
+            <i class="fa" [ngClass]="item?.icon"></i>
+            {{ item?.name }}
+        </div>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="Search" [(ngModel)]="searchText" (ngModelChange)="search()">
+    </div>
+</header>
